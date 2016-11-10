@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Favorite Band</title>
+	
+</head>
+
+<body>
+	<script type="text/javascript">
+		var myFavBands = ["nick carter", "destiny's child", "nsync"];
+		var usersFavBand = prompt("What is your favorite band?").toLowerCase();
+
+		console.log(usersFavBand);
+		console.log(myFavBands.indexOf(usersFavBand));
+		if (myFavBands.indexOf(usersFavBand) >= 0) {
+			alert("WOOOOOOOOOO " + usersFavBand.toUpperCase());
+		} else {
+			alert("dude they blow");
+		}
+
+	</script>
+</body>
+</html>

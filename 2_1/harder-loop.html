@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>harder loop</title>
+	
+</head>
+
+<body>
+	
+	<script type="text/javascript">
+
+		var myFarm = ["chickens", "pigs", "cows", 'horses', 'ostriches'];
+		console.log(myFarm[0].charAt(1) + " I hope there's an h here");
+		for (var i = 0; i < myFarm.length; i++) {
+			console.log(myFarm[i]);
+			// check if first letter of array element is a c or o
+			if (myFarm[i].charAt(0) === "c" || myFarm[i].charAt(0) === "o") {
+				alert("starts with c or o");
+			}
+		}
+
+	</script>
+
+</body>
+</html>

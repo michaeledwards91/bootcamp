@@ -1,0 +1,3 @@
+pseudocode - writing out the process of an application in human sentences to plan out structure.
+
+document.querySelector("#game").innerHTML = "asdfasdfasdf";

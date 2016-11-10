@@ -1,0 +1,5 @@
+look up .each(); jquery method for looping through dom elements or object properties
+
+interview question - "give what we've discussed, is there anything about this job that you feel i'll have trouble tackling?"
+"is there some kind of formal or informal structure for me to acquire mentorship?"
+

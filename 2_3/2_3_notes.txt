@@ -1,0 +1,21 @@
+look at question-game.html, and question-game-solved.
+
+im bad at initializing. once i have the pieces i can figure out what to do, but try to get better at figuring out what those pieces are. declare variables for numbers that need to be tracked, and declare functions for things i know need to happen.
+
+document.createElement("div");
+.appendChild();
+.setAttribute("attribute", "value");
+
+look at drink-list exercise. demonstrates making new div with javascript, changing html within it, and adding it to the dom by appending it to a parent.
+
+jQuery-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+great for web applications, easy dom manipulation.
+
+$ means all of jquery.
+
+$("clickMe").on("click", function () {
+	alert("I've been clicked!");
+})
+

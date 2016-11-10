@@ -1,0 +1,17 @@
+timeouts -
+setTimeout(action, 1000);
+clearTimeout(referenceToTimeout);
+
+re-do activities
+//////////
+function fiveSeconds() {
+	alert("5 seconds have passed");
+}
+
+setTimeout(fiveSeconds, 5000);
+
+timer intervals - 
+setInterval(thingToDo, 1000);
+thingToDo is whats done every x milliseconds
+
+slideshow.js good example of scalable interval that cycles through array of images

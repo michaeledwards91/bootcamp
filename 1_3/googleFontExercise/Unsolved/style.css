@@ -1,0 +1,22 @@
+/**
+ * Google Fonts Demo
+ **/
+
+/* Add in the Google Fonts of your choice */
+
+body {
+	line-height: 1.5;
+}
+
+.thought1 {
+	font-family: 'Lato', sans-serif;
+}
+
+.thought2 {
+	font-family: 'Oswald', sans-serif;
+}
+
+.thought3 {
+	font-family: 'Merriweather', serif;
+}
+

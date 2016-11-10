@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>is pangram</title>
+	
+</head>
+
+<body>
+open console
+
+<script type="text/javascript">
+//char code 97-122
+function isPangram(myString) {
+	var lowerCaseString = myString.toLowerCase();
+	var lettersInString = [];
+	for (var i = 0; i < lowerCaseString.length; i++) {
+		var currentLetter = lowerCaseString.charAt(i);
+		if (lettersInString.indexOf(currentLetter) === (-1) && lowerCaseString.charCodeAt(i) >= 97 && lowerCaseString.charCodeAt(i) <= 122) {
+			lettersInString.push(currentLetter);
+		}
+	}
+	console.log(lettersInString);
+	console.log(lettersInString.length);
+
+	if (lettersInString.length === 26) {
+		console.log("true");
+	} else {
+		console.log("false");
+	}
+}
+isPangram("The quick brown fox jumps over the lazy dog.");
+isPangram("keen eye will spot that the word the occurs twice, and so one ")
+</script>
+
+</body>
+</html>

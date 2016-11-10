@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 24px;
+	line-height: 32px;
+	color: #333;
+}
+
+#wrapper {
+	width: 600px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+#fixed {
+	float: left;
+	position: fixed;
+	background-color: #eee;
+	text-align: center;
+	margin: 0;
+	padding: 40px;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+#relative {
+	position: relative;
+	background-color: #eee;
+	height: 200px;
+	text-align: center;
+	padding: 20px;
+}
+
+#absolute {
+	position: absolute;
+	background-color: #999;
+	text-align: center;
+	right: -20px;
+	bottom: 0px;
+}

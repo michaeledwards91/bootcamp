@@ -1,0 +1,14 @@
+body {
+	line-height: 1.5;
+}
+
+article {
+	margin: 20px;
+	margin-bottom: 45px;
+}
+
+
+.storyImage {
+	float: left;
+	margin-right: 28px;
+}

@@ -1,0 +1,15 @@
+css typography properties
+
+line height
+font size
+line length (not actual css property, just an idea)
+letter spacing (space between each letter)
+sans-serif vs serif (sans-serif looks good online)
+
+use google fonts
+
+css pseudo classes (ex: hover)
+different states of a button before, during, and after you click it
+
+in chrome inspector, click toggle device button to simulate different devices
+

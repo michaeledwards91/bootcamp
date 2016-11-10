@@ -1,0 +1,11 @@
+declare variables for user score and computer score
+
+declare variables for user choice and computer choice
+
+computer choice is determined with math.random?
+user is asked for input for their choice
+
+if user choice beats computer choice, user score +1
+	else, computer score +1
+
+go back to determining user and computer choices

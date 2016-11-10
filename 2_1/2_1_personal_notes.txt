@@ -1,0 +1,9 @@
+script tag in html to use javascript
+<script type="text/javascript">
+	var name = "Jim McCoy";
+	var kidCount = 2;
+	var isBittenByDog = true;
+</script>
+
+.indexOf(value) --- returns the index of the value within its array. if the value is not contained in the array, will return -1. works this way because indexOf wants to return an index (number), -1 is simply a representation of 'not found'.
+

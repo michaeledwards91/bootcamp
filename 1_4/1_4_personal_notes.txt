@@ -1,0 +1,26 @@
+bootstrap alternatives: zurb, zurb foundationl, skeleton, 960 grid
+
+designing websites with a grid paradigm
+makes it easy to align elements aesthetically
+
+wireframing tools: balsamiq.com, framebox.org
+
+every bootstrap grid is made up of:
+container - wraps the whole grid
+rows
+columns
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-4"> <!-- col-SIZE-COLUMNS -->
+		</div>
+		<div class="col-md-8">
+		</div>
+	</div>
+</div>
+
+get in habit of making every row add up to 12
+
+.row {
+	padding-bottom: 2px;
+}

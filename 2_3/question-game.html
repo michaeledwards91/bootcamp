@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Question Game</title>
+	
+</head>
+
+<body>
+	<h1>question game</h1>
+
+	<div class="score">
+		Score: 0 / 10
+	</div>
+
+	<br>
+
+	<div class="question">
+		Ready to play? Press any key to start.
+	</div>
+
+	<br>
+
+	<div class="instructions">
+		Press 't' for true, 'f' for false.
+	</div>
+	<script type="text/javascript">
+
+		var points = 0;
+		var game = {
+			q1: ["water is wet", "t"],
+			q2: ["sky is blue", "t"],
+			q3: ["chair is for sit", "t"],
+			q4: ["PH Q", "t"],
+			q5: ["PH Q", "t"],
+			q6: ["PH Q", "t"],
+			q7: ["PH Q", "t"],
+			q8: ["PH Q", "t"],
+			q9: ["PH Q", "t"],
+			q10: ["PH Q", "t"]
+		};
+
+		//how do we know which question we're on?
+		//need to be able to hold current index
+		var questionIndex = 0;
+		//assign object to an array
+		var questionsArray = [game.q1, game.q2, game.q3, game.q4, game.q5, game.q6, game.q7, game.q8, game.q9, game.q10];
+
+		console.log(questionsArray);
+
+		//functions
+
+		//render the question
+		function renderQuestion() {
+			//are there more questions remaining? if yes, render next one
+			if (questionIndex <= (questionsArray.length -1)) {
+				document.querySelector(".question").innerHTML = questionsArray[questionIndex][0];
+			} else {
+				document.querySelector(".question").innerHTML = "Game Over!";
+				document.querySelector(".score").innerHTML = "Final Score: " + points + " out of " + questionsArray.length;
+			}
+		}
+		//udate the score
+		function updateScore() {
+			document.querySelector(".score").innerHTML = "Score: " + points;
+		}
+		//function to start the game
+		renderQuestion();
+		updateScore();
+		//handle the user input
+		document.onkeyup = function(event) {
+			//if there are no more questions, stop the function
+			if (questionIndex === questionsArray.length) {
+				return;
+			}
+			//find the key pressed
+			var userInput = String.fromCharCode(event.keyCode).toLowerCase();
+			// determine if it was a t or f
+			if (userInput === 't' || userInput === 'f') {
+				//if they guess correctly increase score and alert they are right
+				if (userInput === questionsArray[questionIndex][1]) {
+					alert("Correct");
+					points++;
+					updateScore();
+				} else {
+					alert("Wrong");
+				}
+			}
+			questionIndex++;
+			renderQuestion();
+		}
+		// for (var i = 0; i <= 10; i++) {
+		// 	document.querySelector(".question").innerHTML = game[0];
+		// }
+
+		// document.querySelector(".question").innerHTML = game.q1[0];
+
+		// if (userInput === game.q1[1]) {
+		// 	document.querySelector(".score").innerHTML = "Score: " + points + " / 10";
+		// }
+
+	</script>
+</body>
+</html>

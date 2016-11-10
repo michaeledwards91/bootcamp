@@ -1,0 +1,25 @@
+p {
+	font-family: "Lucida Sans Pro";
+}
+
+.boldPara {
+	font-weight: bold;
+	font-family: 'Lato', sans-serif;
+}
+
+.largePara {
+	font-size: 24px;
+}
+
+.spacedLines {
+	line-height: 50px;
+}
+
+body {
+	width: 80%;
+	margin: 0 auto;
+}
+
+h1 {
+	text-align: center;
+}

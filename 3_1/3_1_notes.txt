@@ -1,0 +1,9 @@
+$(".elem").on({
+	click: function() {
+		//for multiple event handlers with 1 .on, provide an object with syntax event: handler
+	},
+	keyup: function() {
+
+	}
+});
+

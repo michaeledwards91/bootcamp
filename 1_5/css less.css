@@ -1,0 +1,9 @@
+declare variables with @
+@blue: #0085ad;
+@darkBlue: #023348;
+@lightGray: #a6a6a6;
+
+@imgPath: '/media/img/';
+@cols: 12;
+@colsW: 100%;
+@colW: @colsW/@cols;

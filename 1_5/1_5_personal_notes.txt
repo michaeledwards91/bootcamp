@@ -1,0 +1,46 @@
+media queries:
+@media screen and (max-width: 768px) {
+	/* nested styles in here */
+	body {
+		background-color: black;
+	}
+
+	#container {
+		width: 600px
+	}
+}
+
+if media queries arent being triggered as expected, try disabling styles in inspector to see if they trigger, possibly just have to change source order
+
+viewport emulator (or adobe edge inspect) can be used to test how sites look on different devices
+
+background-size: cover    (adjusts background size for different viewports? google it)
+
+every webpage should have viewport meta tag in <head>
+<meta name "viewport" content "width=device-width, initial-scale-1">
+
+li role separater class divider (google this)
+
+css animations
+
+div {
+	transition: background-color 0.5s ease;
+	backround-color: red;
+}
+
+div:hover {
+	background-color: green;
+}
+
+transition property always goes on starting state
+
+@keyframes myFade {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+css preprocessors
