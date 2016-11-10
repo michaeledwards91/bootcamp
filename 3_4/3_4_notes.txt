@@ -1,0 +1,14 @@
+api - application programming interface
+
+i guess they're like little tools with interfaces that do any number of things and can produce json results that you can incorporate into your pages? will prob make more way more sense when they teach requests and responses.
+
+C - create: post (actual name of html action)
+R - Read: get 
+U - update: post
+D - delete: delete
+
+var title = "space+jam";
+var queryURL = "http://www.omdbapi.com/?t=" + title + "&y=&plot=short&r=json";
+$.ajax({url: queryURL, method: "GET"}).done(function(response) { //response is the json object that is 																		 //"gotten"
+	
+})

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>ajax and stuff</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+open console
+<script type="text/javascript">
+	var title = "space+jam";
+	var queryURL = "http://www.omdbapi.com/?t=" + title + "&y=&plot=short&r=json";
+	$.ajax({url: queryURL, method: "GET"}).done(function(response) { //a is the json object that is 																		 //"gotten"
+		console.log(response);
+		console.log(response.Type);
+		console.log(response.Title);
+		console.log(response.Year);
+		console.log(response.Rated);
+	})
+</script>
+</body>
+</html>
