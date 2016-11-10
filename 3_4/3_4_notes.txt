@@ -12,3 +12,5 @@ var queryURL = "http://www.omdbapi.com/?t=" + title + "&y=&plot=short&r=json";
 $.ajax({url: queryURL, method: "GET"}).done(function(response) { //response is the json object that is 																		 //"gotten"
 	
 })
+
+.children.eq(index)   use to select children and elements without classes or id's.
